@@ -16,5 +16,22 @@
     {
       "path": "./e2e/tsconfig.json"
     }
-]
+  ],
+  "paths": {
+    "@app/*": [
+      "./app/core/*"
+    ],
+    "@shared/*": [
+      "./app/shared/*"
+    ],
+    "@env": [
+      "./environments/environment"
+    ],
+    "@modules/*": [
+      "./app/modules/*"
+    ],
+    "@data/*": [
+      "./app/data/*"
+    ]
+  },
 }
