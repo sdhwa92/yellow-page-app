@@ -8,13 +8,13 @@
     </div>
     <div class="form-group">
       <select id="category" class="form-control" formControlName="businessIndustry">
-        <option value="">Any</option>
+        <option [value]="null">Any</option>
         <option *ngFor="let industryType of industryTypes" value="{{industryTypeEnum[industryType]}}">{{industryTypeEnum[industryType]}}</option>
       </select>
     </div>
     <div class="form-group action-buttons-wrapper">
       <button type="submit" class="btn btn-warning">Search</button>
-      <button type="button" class="btn btn-default">Reset</button>
+      <button type="button" class="btn btn-default" (click)="onReset()">Reset</button>
     </div>
   </form>
 </div>

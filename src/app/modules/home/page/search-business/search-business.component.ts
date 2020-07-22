@@ -57,15 +57,19 @@ export class SearchBusinessComponent implements OnInit {
     this.searchForm = this._fb.group({
       businessName: [''],
       businessPostcode: ['', Validators.pattern("^[0-9]*$")],
-      businessIndustry: ['']
+      businessIndustry: [null]
     });
   }
 
   onSubmit(form: FormGroup) {
-    console.log('Submit Search');
-    console.log(form);
-    
     this.search.emit(form.value);
+  }
+
+  onReset() {
+    this.searchForm.reset();
+    this.searchForm.markAsPristine();
+    this.searchForm.markAsUntouched();
+    this.search.emit(this.searchForm.value);
   }
 
   get industryTypeEnum()
