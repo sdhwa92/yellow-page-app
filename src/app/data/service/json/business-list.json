@@ -1,0 +1,43 @@
+{
+  "businesses": [
+    {
+      "businessId": 1,
+      "link": "https://www.hanaromartonline.com/",
+      "name": "Hanaro Mart (Underwood)",
+      "thumbnail": "data:image/png;base64,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",
+      "phoneNumber": "",
+      "email": "string",
+      "address": "6/11-21 Kingston Rd, Underwood QLD 4119",
+      "addressLink": "https://goo.gl/maps/DESJQUAfT1nJwJs27",
+      "suburb": "Underwood",
+      "postcode": 4119,
+      "industryType": [300]
+    },
+    {
+      "businessId": 2,
+      "link": "https://www.facebook.com/moamartbrisbane/",
+      "name": "Moa Mart",
+      "thumbnail": "https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/64395704_469357297152655_1319545658503331840_n.jpg?_nc_cat=104&_nc_sid=09cbfe&_nc_ohc=zN-pegpUaoIAX-v2otL&_nc_ht=scontent-syd2-1.xx&oh=898c793791fd54b6e6f07ea42b6358ec&oe=5F321136",
+      "phoneNumber": "(07) 3423 8989",
+      "email": "seung2sk@gmail.com",
+      "address": "6 Zamia St, Sunnybank QLD 4109",
+      "addressLink": "https://goo.gl/maps/FSVuqKCevE37tG497",
+      "suburb": "Sunnybank",
+      "postcode": 4109,
+      "industryType": [300]
+    },
+    {
+      "businessId": 3,
+      "link": "https://www.facebook.com/runcornhappymarket/",
+      "name": "Happy Mart",
+      "thumbnail": "https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/69956739_2363742687039596_3143271828462501888_n.jpg?_nc_cat=108&_nc_sid=09cbfe&_nc_ohc=xIeSVdS5XlwAX_cCwBq&_nc_ht=scontent-syd2-1.xx&oh=6e06d1d085ad9124f059f081bcbaa527&oe=5F31660D",
+      "phoneNumber": "(07) 3161 8875",
+      "email": "happymarketpl@gmail.com",
+      "address": "7/256 Warrigal Rd, Runcorn QLD 4113",
+      "addressLink": "https://goo.gl/maps/DESJQUAfT1nJwJs27",
+      "suburb": "Runcorn",
+      "postcode": 4113,
+      "industryType": [300]
+    }
+  ]
+}

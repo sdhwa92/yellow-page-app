@@ -1,3 +1,4 @@
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -45,10 +46,11 @@ import { SpinnerComponent } from './component/spinner/spinner.component';
     ReactiveFormsModule,
     RouterModule,
 
-    MaterialModule,
-
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+
+    // MDB
+    MDBBootstrapModule
   ],
   exports: [
     CommonModule,
@@ -59,7 +61,10 @@ import { SpinnerComponent } from './component/spinner/spinner.component';
     MaterialModule,
 
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+
+    // MDB
+    MDBBootstrapModule
   ]
 })
 export class SharedModule { 

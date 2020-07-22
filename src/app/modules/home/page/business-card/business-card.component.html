@@ -1,0 +1,21 @@
+<div class="business-card">
+  <div class="business-card-head">
+    <div class="business-name">
+      <h5>{{ businessData.name }}</h5>
+    </div>
+    <div class="business-logo">
+      <div class="logo-wrapper">
+        <ng-container *ngIf="businessData.thumbnail">
+          <img src="{{businessData.thumbnail}}" class="rounded-circle" />
+        </ng-container>
+        <ng-container *ngIf="!businessData.thumbnail">
+          <img src="../../../../../assets/images/logo/no-image-1.jpg" class="rounded-circle" />
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="business-card-body">
+    <p><mdb-icon fas icon="map-marker-alt"></mdb-icon>Address: {{businessData.address}}</p>
+  </div>
+</div>

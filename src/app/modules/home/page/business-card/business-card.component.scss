@@ -1,0 +1,21 @@
+.business-card {
+  padding: 20px;
+  border: 1px solid #e1e2e3;
+
+  .business-name {
+    display: inline-block;
+  }
+  
+  .business-logo {
+    float: right;
+  }
+  
+  .logo-wrapper {
+    width: 40px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeResolver } from './home-resolver.service';
 import { HomeComponent } from './page/home.component';
 
 export const routes: Routes = [
@@ -10,7 +11,10 @@ export const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    resolve: {
+      businesses: HomeResolver
+    }
   }
 ];
 
