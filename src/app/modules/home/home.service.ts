@@ -32,7 +32,7 @@ export class HomeService {
 
       if (queryKey === 'businessIndustry') {
         let enumValue: IndustryTypeEnum = (<any>IndustryTypeEnum)[query[queryKey]];
-        filteredList = filteredList.filter(business => business.industryType.includes(enumValue));
+        filteredList = filteredList.filter(business => business.industryType == (enumValue));
       }
     }
 

@@ -9,5 +9,5 @@ export interface Business {
   addressLink: string;
   suburb: string;
   postcode: number;
-  industryType: number[];
+  industryType: number;
 }

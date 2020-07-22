@@ -31,15 +31,12 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.allBusinessList = resolved;
 
     this._businessListData$.next(resolved);
-    // this.businessListData$ = this.route.data.pipe(map(data => data.businesses));
 
     //-- Console log data
     this._businessListData$.pipe(
       takeUntil(this._destoryed$)
     )
     .subscribe( (data) => {
-      console.log('Businesses data');
-      console.log(data);
       this.businessList = data;
     });
   }
@@ -52,28 +49,8 @@ export class HomeComponent implements OnInit, OnDestroy {
   fetchList(search: Search): void {
     let filteredList: Business[];
     filteredList = this._homeService.SearchByFilter(search, this.allBusinessList);
-
-    console.log('Filtered List');
-    console.log(filteredList);
   
     this._businessListData$.next(filteredList);
-
-    // if (search.businessName && !search.businessPostcode) {
-    //   this._businessListData$.next(this.allBusinessList.filter(business => business.name.indexOf(search.businessName) !== -1));
-    //   console.log('filter by business name');
-    // }
-    // else if (!search.businessName && search.businessPostcode) {
-    //   this._businessListData$.next(this.allBusinessList.filter(business => business.postcode.toString() === search.businessPostcode));
-    //   console.log('filter by business postcode');
-    // }
-    // else if (search.businessName && search.businessPostcode) {
-    //   this._businessListData$.next(this.allBusinessList.filter(business => business.postcode.toString() === search.businessPostcode && business.name.indexOf(search.businessName) !== -1));
-    //   console.log('filter by business name and postcode');
-    // }
-    // else {
-    //   console.log('no filter applied');
-    //   this._businessListData$.next(this.allBusinessList);
-    // }
   }
 
 }

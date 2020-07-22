@@ -10,6 +10,6 @@ import { Business } from '@data/schema/business';
 export class JsonApiService {
 
   getBusinessList(): Observable<Business[]> {
-    return of(businessList.businesses);
+    return of(businessList);
   }
 }
