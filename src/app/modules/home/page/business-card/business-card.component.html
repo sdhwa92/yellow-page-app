@@ -16,6 +16,16 @@
   </div>
   <hr>
   <div class="business-card-body">
-    <p><mdb-icon fas icon="map-marker-alt"></mdb-icon>Address: {{businessData.address}}</p>
+    <div class="row">
+      <div class="col-8">
+        <p><mdb-icon fas icon="map-marker-alt"></mdb-icon> Address: {{businessData.address}}</p>
+        <p><mdb-icon fas icon="phone-square-alt"></mdb-icon> Phone: {{businessData.phoneNumber}}</p>
+      </div>
+      <div class="col-4 cta-wrapper">
+        <ng-container *ngIf="businessData.addressLink">
+          <a class="btn btn-warning" href="{{businessData.addressLink}}" target="_blank">Show Map</a>
+        </ng-container>
+      </div>
+    </div>
   </div>
 </div>
