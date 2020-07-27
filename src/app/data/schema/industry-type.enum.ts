@@ -16,4 +16,12 @@ export enum IndustryTypeEnum
   Salon = 1100,
   Vet = 1200,
   Religious = 1300,
+  Health = 1400,
+  Furniture = 1500,
+  Appliance = 1501,
+  Tutorial = 1600,
+  Delivery = 1700,
+  IT = 1800,
+  Event = 1900,
+  
 }
